@@ -587,30 +587,6 @@ strong {
 
 
 /*---------------------------------------
-  FEATURED              
------------------------------------------*/
-.featured-section {
-  background-color: var(--custom-btn-bg-color);
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.featured-section::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 450px 450px;
-  border-color: transparent transparent var(--white-color) transparent;
-  pointer-events: none;
-}
-
-
-/*---------------------------------------
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
@@ -777,55 +753,7 @@ strong {
 }
 
 
-/*---------------------------------------
-  DIVIDER SECTION               
------------------------------------------*/
-.divider-section {
-  background-image: url('../images/wave-haikei.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-
-/*---------------------------------------
-  CONTACT               
------------------------------------------*/
-.contact-section {
-  background: var(--custom-btn-bg-color);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 450px 450px 0 0;
-  border-color: var(--white-color) transparent transparent;
-  pointer-events: none;
-}
-
-.contact-section .container {
-  position: relative;
-}
-
-.contact-section p {
-  color: var(--white-color);
-  font-size: var(--h6-font-size);
-}
-
-.contact-link {
-  color: var(--white-color);
-}
-
-.contact-section .copyright-text {
-  font-size: var(--copyright-font-size);
-}
 
 
 /*---------------------------------------
@@ -992,6 +920,10 @@ body{
 .contact .info p {
   font-size: 1.5em;
 }
+.content .card .info p a {
+  text-transform:lowercase;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
